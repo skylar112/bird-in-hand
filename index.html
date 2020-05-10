@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Recipes etc...</title>
+  <link rel='icon' href="images\eat.ico" type='image/x-icon' />
+  <!-- Bootstrap CSS CDN  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Jquery CDN  -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!-- Moment.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
+  <!-- Font Awesome CSS Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- JS & CSS links  -->
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Search DIV container -->
+  <div id="main-container" class="main-container">
+    <form>
+
+      <h1 class="title">Recipe etc...</h1>
+
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Enter recipe name...">
+        <button>Search</button>
+      </div> 
+    </form>
+  </div>
+  <!-- Popular dishes div -->
+  <h2 id="popular-dish-h2">Popular Categories</h2>
+  <div class="row pre-selection-recipe">
+    <div class="col-md-2" id="meal30min">
+      <img src="images/30min.jpg" alt="" height="250" width="250">
+      <div class="content">
+        <div class="text">30min Meal</div>
+      </div>
+    </div>
+    <div class="col-md-2" id="breakfast">
+      <img src="images/breakfast.jpg" alt="" height="250" width="250">
+      <div class="content">
+        <div class="text">Breakfast</div>
+      </div>
+    </div>
+    <div class="col-md-2" id="chicken">
+      <img src="images/chicken.jpg" alt="" height="250" width="250">
+      <div class="content">
+        <div class="text">Chicken</div>
+      </div>
+    </div>
+    <div class="col-md-2" id="cake">
+      <img src="images/cake.jpg" alt="" height="250" width="250">
+      <div class="content">
+        <div class="text">Cake</div>
+      </div>
+    </div>
+    <div class="col-md-2" id="tacos">
+      <img src="images/tacos.jpg" alt="" height="250" width="250">
+      <div class="content">
+        <div class="text">Tacos</div>
+      </div>
+    </div>
+    <div class="col-md-2" id="pasta">
+      <img src="images/pasta.jpg" alt="" height="250" width="250">
+      <div class="content">
+        <div class="text">Pasta</div>
+      </div>
+    </div>
+  </div>
+  <!-- Recipes view div -->
+  <div class="container" id="recipeContainer">
+    <div id="recipe-view" class="card-deck">
+
+    </div>
+    <div id="recipe-view-2" class="card-deck">
+
+    </div>
+    <div id="recipe-view-3" class="card-deck">
+
+    </div>
+
+  </div>
+
+
+  <!-- Youtube chef-->
+  <div class="container chef-videos">
+    <p id="heading">Featured Chef: Gordon Ramsay</p>
+    <section id="video">
+    </section>
+    <div class="card-deck">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" id="frame"></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title video1"></h5>
+          <p class="card-text" id="vid-desc"></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" id="frame2"></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text" id="vid-desc2"></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" id="frame3"></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text" id="vid-desc3"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="sticky-footer" class="py-3">
+    <div class="container text-center footerDiv">
+      <a href="bio.html">Copyright &copy;2020 Laureni Wilkinson, Dellinger Rodriguez, and Chu Lin</a>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
